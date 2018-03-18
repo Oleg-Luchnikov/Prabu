@@ -1,0 +1,90 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-------- {
+  background-image: url(sprite.png);
+  background-position: 0px -76px;
+  width: 27px;
+  height: 17px;
+}
+.icon--------2 {
+  background-image: url(sprite.png);
+  background-position: -27px -57px;
+  width: 27px;
+  height: 17px;
+}
+.icon-call-ico {
+  background-image: url(sprite.png);
+  background-position: -77px -44px;
+  width: 14px;
+  height: 24px;
+}
+.icon-envelope-ico {
+  background-image: url(sprite.png);
+  background-position: -27px -76px;
+  width: 25px;
+  height: 15px;
+}
+.icon-fb-ico {
+  background-image: url(sprite.png);
+  background-position: -99px 0px;
+  width: 11px;
+  height: 25px;
+}
+.icon-img-542962 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 42px;
+  height: 32px;
+}
+.icon-instagram-ico {
+  background-image: url(sprite.png);
+  background-position: -77px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-site-ico {
+  background-image: url(sprite.png);
+  background-position: -42px 0px;
+  width: 35px;
+  height: 21px;
+}
+.icon-skype-ico {
+  background-image: url(sprite.png);
+  background-position: 0px -32px;
+  width: 26px;
+  height: 25px;
+}
+.icon-user-ico {
+  background-image: url(sprite.png);
+  background-position: -77px -22px;
+  width: 20px;
+  height: 22px;
+}
+.icon-vk-ico {
+  background-image: url(sprite.png);
+  background-position: -26px -32px;
+  width: 30px;
+  height: 18px;
+}
+.icon-youtube-ico {
+  background-image: url(sprite.png);
+  background-position: 0px -57px;
+  width: 27px;
+  height: 19px;
+}

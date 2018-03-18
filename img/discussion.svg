@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 508 508" style="enable-background:new 0 0 508 508;" xml:space="preserve" width="512px" height="512px" class=""><g><circle style="fill:#0099CC" cx="254" cy="254" r="254" data-original="#54C0EB" class="" data-old_color="#0099cc"/><g>
+	<circle style="fill:#FFFFFF" cx="254" cy="152" r="44.8" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="254" cy="81.2" r="18.4" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="254" cy="356" r="44.8" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="254" cy="426.8" r="18.4" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="356" cy="254" r="44.8" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="426.8" cy="254" r="18.4" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="152" cy="254" r="44.8" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+	<circle style="fill:#FFFFFF" cx="81.2" cy="254" r="18.4" data-original="#324A5E" class="" data-old_color="#ffffff"/>
+</g><circle style="fill:#0099CC" cx="254" cy="248" r="112.4" data-original="#FFFFFF" class="" data-old_color="#0099cc"/><polygon style="fill:#FFFFFF" points="209.6,204.8 215.2,223.2 196.8,228.8 223.6,314.8 317.6,285.6 285.2,181.2 " data-original="#E6E9EE" class="" data-old_color="#ffffff"/><g>
+	<polygon style="fill:#0099CC" points="209.6,204.8 196.8,228.8 215.2,223.2  " data-original="#CED5E0" class="active-path" data-old_color="#0099cc"/>
+	
+		<rect x="213.532" y="227.576" transform="matrix(0.955 -0.2967 0.2967 0.955 -57.311 84.3157)" style="fill:#0099CC" width="71.202" height="6.8" data-original="#CED5E0" class="active-path" data-old_color="#0099cc"/>
+	
+		<rect x="218.901" y="244.275" transform="matrix(0.955 -0.2967 0.2967 0.955 -62.0237 86.6607)" style="fill:#0099CC" width="71.202" height="6.8" data-original="#CED5E0" class="active-path" data-old_color="#0099cc"/>
+	
+		<rect x="223.719" y="260.931" transform="matrix(0.955 -0.2966 0.2966 0.955 -66.7318 88.8086)" style="fill:#0099CC" width="71.2" height="6.8" data-original="#CED5E0" class="active-path" data-old_color="#0099cc"/>
+	
+		<rect x="229.68" y="282.522" transform="matrix(0.955 -0.2966 0.2966 0.955 -73.6504 86.3872)" style="fill:#0099CC" width="36.4" height="6.8" data-original="#CED5E0" class="active-path" data-old_color="#0099cc"/>
+</g></g> </svg>
