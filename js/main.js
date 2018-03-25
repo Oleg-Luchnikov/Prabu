@@ -70,3 +70,23 @@ $(document).ready(function(){
 		});
 	});
 });
+
+$(function(){
+  // hide all content
+  $('.accordeon_content').hide();
+  
+  $('.accordeon_title').click(function(){
+    $(this).parent().toggleClass('active').siblings().removeClass('active');
+    $('.accordeon_content').slideUp();
+    
+    if(!$(this).next().is(":visible")) {
+			$(this).next().slideDown();
+		}
+  });
+});
+
+$(".open-all").click(function() {
+	$(".accordeon_item").addClass('active');
+	$('.accordeon_content').slideDown();
+	return false;
+});

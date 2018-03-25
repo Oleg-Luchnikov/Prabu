@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Dutch801Cyril BT';
+    src: url('../fonts/Dutch801CyrillicBT-Roman.woff2') format('woff2'),
+        url('../fonts/Dutch801CyrillicBT-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('../fonts/ArialMT.woff2') format('woff2'),
+        url('../fonts/ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('../fonts/Arial-BoldMT.woff2') format('woff2'),
+        url('../fonts/Arial-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Avanti';
