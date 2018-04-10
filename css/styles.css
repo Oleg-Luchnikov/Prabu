@@ -211,7 +211,7 @@ a {
 ul, li {
   list-style: none; }
 
-input:focus, .select2-container:focus, .select2-selection:focus {
+input:focus, textarea:focus {
   outline: none; }
 
 .container {
@@ -508,6 +508,11 @@ input:focus, .select2-container:focus, .select2-selection:focus {
   .header-nav a:hover {
     background-color: #ececec; }
 
+@media all and (max-width: 1170px) {
+  .header-nav a {
+    font-size: 16px;
+    padding: 16px 10px 12px; } }
+
 .popup-btn {
   max-width: 221px;
   width: 100%;
@@ -564,6 +569,10 @@ input:focus, .select2-container:focus, .select2-selection:focus {
   max-width: 270px; }
   .tool-item:first-child {
     margin-right: 141px; }
+  .tool-item a {
+    text-align: center; }
+    .tool-item a:hover .tool-title {
+      color: #006699; }
   .tool-item img {
     max-width: 113px;
     width: 100%;
@@ -576,7 +585,10 @@ input:focus, .select2-container:focus, .select2-selection:focus {
     line-height: 60px;
     max-width: 235px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease; }
   .tool-item .tool-info {
     color: #212121;
     font-size: 14px;
@@ -585,8 +597,9 @@ input:focus, .select2-container:focus, .select2-selection:focus {
     text-align: center;
     display: inline-block;
     margin-top: 20px; }
-    .tool-item .tool-info span {
-      border-bottom: 1px dashed #7a7a7a; }
+    .tool-item .tool-info a {
+      border-bottom: 1px dashed #7a7a7a;
+      color: #212121; }
 
 .help-context-block {
   display: none;
@@ -662,12 +675,19 @@ input:focus, .select2-container:focus, .select2-selection:focus {
   padding: 12px 19px;
   border-radius: 4px;
   background-color: #169bd5;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear; }
+  .open-btn:hover {
+    bottom: -30px; }
   .open-btn.active {
     border: 2px solid #158db5;
     background-color: #ffffff; }
     .open-btn.active span {
       color: #169bd5; }
+    .open-btn.active:hover {
+      bottom: -15px; }
   .open-btn span {
     color: #ffffff;
     font-family: "Museo Sans Cyrl";
@@ -689,6 +709,9 @@ section {
   font-weight: 300;
   line-height: 36px;
   padding-left: 56px; }
+
+.tab-wrapper {
+  position: relative; }
 
 .tabs {
   margin-top: 53px;
@@ -790,6 +813,36 @@ section {
       right: 13px;
       top: 12px;
       z-index: 1; }
+
+.tabs-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
+  .tabs-nav:after {
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -.3em; }
+  .tabs-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #66c2e0;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+    .tabs-nav li:hover {
+      width: 16px;
+      height: 16px; }
+    .tabs-nav li:not(:last-child) {
+      margin-right: 35px; }
+    .tabs-nav li.active {
+      width: 16px;
+      height: 16px;
+      background-color: #006699; }
 
 .tab__content {
   position: relative; }
@@ -1603,3 +1656,170 @@ section {
             background-position: -26px -32px;
             width: 30px;
             height: 18px; }
+
+#question {
+  max-width: 531px; }
+
+.modal-wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  background-color: #0099cc;
+  padding: 35px 24px 40px;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .modal-wrapper label {
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0 15px;
+    margin-top: 40px;
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    .modal-wrapper label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background-image: url(../img/sprite.png); }
+    .modal-wrapper label.name:before {
+      background-position: -77px -22px;
+      width: 20px;
+      height: 22px; }
+    .modal-wrapper label.number:before {
+      background-position: -77px -44px;
+      width: 14px;
+      height: 24px;
+      left: 6px; }
+    .modal-wrapper label.email:before {
+      background-position: -27px -76px;
+      width: 25px;
+      height: 15px;
+      top: 13px; }
+    .modal-wrapper label.site-name:before {
+      background-position: -42px 0px;
+      width: 35px;
+      height: 21px; }
+    .modal-wrapper label input {
+      border: none;
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      padding-left: 60px;
+      width: 100%;
+      font-family: "Open Sans"; }
+    .modal-wrapper label input::-webkit-input-placeholder {
+      color: #fff; }
+    .modal-wrapper label input::-moz-placeholder {
+      color: #fff; }
+    .modal-wrapper label input:-moz-placeholder {
+      color: #fff; }
+    .modal-wrapper label input:-ms-input-placeholder {
+      color: #fff; }
+    .modal-wrapper label input[placeholder] {
+      text-overflow: ellipsis; }
+    .modal-wrapper label input::-moz-placeholder {
+      text-overflow: ellipsis; }
+    .modal-wrapper label input:-moz-placeholder {
+      text-overflow: ellipsis; }
+    .modal-wrapper label input:-ms-input-placeholder {
+      text-overflow: ellipsis; }
+    .modal-wrapper label input:focus::-webkit-input-placeholder {
+      opacity: 0;
+      transition: all 0.3s ease; }
+    .modal-wrapper label input:focus::-moz-placeholder {
+      opacity: 0;
+      transition: all 0.3s ease; }
+    .modal-wrapper label input:focus:-moz-placeholder {
+      opacity: 0;
+      transition: all 0.3s ease; }
+    .modal-wrapper label input:focus:-ms-input-placeholder {
+      opacity: 0;
+      transition: all 0.3s ease; }
+  .modal-wrapper textarea {
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 60px;
+    width: 100%;
+    padding: 18px 0 0 19px;
+    margin-top: 40px;
+    height: 114px;
+    font-family: "Open Sans"; }
+  .modal-wrapper textarea::-webkit-input-placeholder {
+    color: #fff; }
+  .modal-wrapper textarea::-moz-placeholder {
+    color: #fff; }
+  .modal-wrapper textarea:-moz-placeholder {
+    color: #fff; }
+  .modal-wrapper textarea:-ms-input-placeholder {
+    color: #fff; }
+  .modal-wrapper textarea[placeholder] {
+    text-overflow: ellipsis; }
+  .modal-wrapper textarea::-moz-placeholder {
+    text-overflow: ellipsis; }
+  .modal-wrapper textarea:-moz-placeholder {
+    text-overflow: ellipsis; }
+  .modal-wrapper textarea:-ms-input-placeholder {
+    text-overflow: ellipsis; }
+  .modal-wrapper textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: all 0.3s ease; }
+  .modal-wrapper textarea:focus::-moz-placeholder {
+    opacity: 0;
+    transition: all 0.3s ease; }
+  .modal-wrapper textarea:focus:-moz-placeholder {
+    opacity: 0;
+    transition: all 0.3s ease; }
+  .modal-wrapper textarea:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: all 0.3s ease; }
+  .modal-wrapper input[type="submit"] {
+    display: inline-block;
+    max-width: 229px;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl";
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 35px;
+    border-radius: 4px;
+    background-color: #5e5e5e;
+    -webkit-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+    border: none;
+    cursor: pointer; }
+    .modal-wrapper input[type="submit"]:active {
+      background-color: #fff;
+      color: #5e5e5e; }
+    .modal-wrapper input[type="submit"]:hover {
+      background-color: #fff;
+      color: #5e5e5e; }
+
+.modal-title {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 30px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff; }
+
+#bid {
+  max-width: 511px; }
+
+#subscribe {
+  max-width: 641px; }

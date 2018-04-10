@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Prabu</title>
+	<link rel="stylesheet" href="css/jquery.mmenu.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -77,7 +79,7 @@
 							<li><a href="#">Статьи</a></li>
 						</ul>
 					</nav>
-					<a href="#" class="popup-btn"><span>Заявка</span></a>
+					<a href="#bid" class="popup-btn modal-btn"><span>Заявка</span></a>
 				</div>
 			</div>
 		</header>
@@ -88,17 +90,21 @@
 						<span class="main-context-block-title">КОНТЕКСТНАЯ РЕКЛАМА - ИСТОЧНИК ТРАФИКА №1</span>
 						<div class="tools-wrapper">
 							<div class="tool-item">
-								<img src="img/google.svg" alt="google">
-								<span class="tool-title">Google AdWords</span>
+								<a href="#">
+									<img src="img/google.svg" alt="google">
+									<span class="tool-title">Google AdWords</span>
+								</a>
 								<span class="tool-info">
-									<span>Поиск,</span> <span>КМС,</span> <span>Ремаркетинг,</span> <span>YouTube</span> <span>Мобильные приложения</span>
+									<a href="#">Поиск,</a> <a href="#">КМС,</a> <a href="#">Ремаркетинг,</a> <a href="#">YouTube</a> <a href="#" >Мобильные приложения</a>
 								</span>
 							</div>
 							<div class="tool-item">
-								<img src="img/yandex.svg" alt="yandex">
-								<span class="tool-title">Яндекс Директ</span>
+								<a href="#">
+									<img src="img/yandex.svg" alt="yandex">
+									<span class="tool-title">Яндекс Директ</span>
+								</a>
 								<span class="tool-info">
-									<span>Поиск,</span> <span>РСЯ,</span> <span>Ретаркетинг,</span> <span>YoВидеорекламаuTube</span>
+									<a href="#"">Поиск,</a> <a href="#">РСЯ,</a> <a href="#">Ретаркетинг,</a> <a href="#">YoВидеорекламаuTube</a>
 								</span>
 							</div>
 						</div>
@@ -152,18 +158,10 @@
 							</li>
 						</ul>
 						<ul class="tabs-nav">
-							<li class="active">
-							1
-							</li>
-							<li>
-							2
-							</li>
-							<li>
-							3
-							</li>
-							<li>
-							4
-							</li>
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 						<ul class="tab__content">
 							<li class="active">
@@ -466,7 +464,7 @@
 					</div>
 					<div class="brief-info">
 						<span>Мы подготовим для Вас индивидуальное коммерческое предложение, заполните бриф (это займет не более 5 минут)</span>
-						<a href="#" class="popup-btn">
+						<a href="#bid" class="popup-btn modal-btn">
 							<span>Заполнить Бриф</span>
 						</a>
 					</div>
@@ -549,7 +547,7 @@
 				<div class="container">
 					<span class="section-title">Часто задаваемые вопросы о контекстной рекламе</span>
 					<div class="links-wrapper">
-						<a href="#" class="ask">Спросить</a>
+						<a href="#question" class="ask modal-btn">Спросить</a>
 						<a href="#" class="open-all">Открыть все</a>
 					</div>
 					<ul class="accordeon">
@@ -617,7 +615,7 @@
 							<span class="number">108</span>
 							<span class="name">публикаций</span>
 						</div>
-						<a href="#" class="subscribe-btn">
+						<a href="#subscribe" class="subscribe-btn modal-btn">
 							<span>Подписаться</span>
 						</a>
 					</div>
@@ -635,8 +633,32 @@
 				</ul>
 			</div>
 		</footer>
+		<div id="bid" class="modal-wrapper white-popup mfp-hide">
+			<span class="modal-title">Предварительная заявка</span>
+			<label for="name" class="name"><input type="text" id="name" placeholder="Имя"></label>
+			<label for="email-field" class="email"><input type="email" id="email-field" placeholder="Email*"></label>
+			<label for="contact-number" class="number"><input type="tel" id="contact-number" placeholder="Телефон"></label>
+			<label for="web" class="site-name"><input type="text" id="web" placeholder="Сайт"></label>
+			<textarea name="question" id="your-question" placeholder="Поле для Вашего вопроса или дополнительной информации"></textarea>
+			<input type="submit" placeholder="Отправить" class="modal-submit">
+		</div>
+		<div id="question" class="modal-wrapper white-popup mfp-hide">
+			<span class="modal-title">Задайте интересующий Вас вопрос</span>
+			<label for="name" class="name"><input type="text" id="name" placeholder="Имя"></label>
+			<label for="contact-number" class="number"><input type="tel" id="contact-number" placeholder="Контакты для связи"></label>
+			<textarea name="question" id="your-question" placeholder="Текст вопроса*"></textarea>
+			<input type="submit" placeholder="Отправить" class="modal-submit">
+		</div>
+		<div id="subscribe" class="modal-wrapper white-popup mfp-hide">
+			<span class="modal-title">Подпишитесь на рассылку полезных статей и кейсов</span>
+			<label for="name" class="name"><input type="text" id="name" placeholder="Имя"></label>
+			<label for="email-field" class="email"><input type="email" id="email-field" placeholder="Email*"></label>
+			<input type="submit" placeholder="Отправить" class="modal-submit">
+		</div>
 	</div>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mmenu.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
