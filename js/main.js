@@ -1,9 +1,11 @@
 "use strict"
 $(document).ready(function() {
+
 	$(".hamburger-button").click(function() {
 		$(this).toggleClass('close');
 		$('.header-top-nav').toggleClass('show');
 	});
+
 	$(".open-btn").click(function() {
 		$(this).toggleClass("active");
 		if ( $( ".help-context-block" ).is( ":hidden" ) ) {
@@ -16,32 +18,26 @@ $(document).ready(function() {
 	 $("#mobile-menu").mmenu({
      // options
      navbar: {
-     	add: false
+     	add: true,
+     	title: "<a href='/' class='mobile-logo'><span >P<b>R</b>abu</span></a>",
      }
   }, {
      // configuration
      offCanvas: {
         pageSelector: ".wrapper"
      },
-      classNames: {
-          fixedElements: {
-             sticky: "header-navbar",
-             elemInsertMethod: "prependTo",
-          }
-       }
-
-
+     extensions: [
+	    "fx-menu-zoom",
+	    "fx-panels-zoom"
+	 ],
   });
   var API = $("#mobile-menu").data( "mmenu" );
 	  
-  $("#hamburger-button").click(function() {
+  $(".hamburger-button-mobile").click(function() {
      API.open();
      return false;
   });
-  $("#hamburger-button").click(function() {
-     API.close();
-  });
-  $(".mm-listitem .link-item").click(function() {
+  $(".hamburger-button-mobile").click(function() {
      API.close();
   });
 
